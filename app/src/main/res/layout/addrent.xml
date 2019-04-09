@@ -1,0 +1,92 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Сдать в аренду"
+                    android:textStyle="bold"
+                    android:id="@+id/updaterenttitle"
+                    android:gravity="center"
+                    android:textSize="14pt"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Имя Клиента"
+                android:layout_below="@+id/ProfileName"
+                android:id="@+id/AddRentName"
+                android:textSize="11pt"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Начало срока аренды"
+                android:focusable="false"
+                android:layout_below="@+id/ProfileName"
+                android:id="@+id/AddRentStartDate"
+                android:textSize="11pt"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Конец срока аренды"
+                android:layout_below="@+id/ProfileName"
+                android:focusable="false"
+                android:id="@+id/AddRentEndDate"
+                android:textSize="11pt"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Стоимость аренды:"
+                android:focusable="false"
+                android:id="@+id/AddRentCost"
+                android:textSize="11pt"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:enabled="true"
+                android:focusableInTouchMode="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="Применить"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11pt"
+                    android:layout_weight="1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/AddRentYes"/>
+                <Button
+                    android:text="Отмена"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11pt"
+                    android:layout_weight="1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/AddRentNo"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

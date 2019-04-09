@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Марка авто"
+        android:textSize="16pt"
+        android:id="@+id/labeltext"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Label"
+        android:layout_below="@id/labeltext"
+        android:id="@+id/CarInfoLabel"
+        android:textSize="16pt"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Модель авто"
+        android:textSize="16pt"
+        android:layout_below="@+id/CarInfoLabel"
+        android:id="@+id/modellabel"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Model"
+        android:layout_below="@+id/modellabel"
+        android:textSize="16pt"
+        android:id="@+id/CarInfoModel"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Стоимость авто"
+        android:textSize="16pt"
+        android:layout_below="@id/CarInfoModel"
+        android:id="@+id/costinfo"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cost"
+        android:layout_below="@+id/costinfo"
+        android:textSize="16pt"
+        android:id="@+id/CarInfoCost"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="стоимость часа аренды авто"
+        android:textSize="16pt"
+        android:layout_below="@id/CarInfoCost"
+        android:id="@+id/rentinfo"
+        />
+
+    <TextView
+        android:id="@+id/CarInfoRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rentinfo"
+        android:text="RentCost"
+        android:textSize="16pt"
+        android:layout_alignParentLeft="true" />
+
+
+</RelativeLayout>
